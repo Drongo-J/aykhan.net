@@ -263,6 +263,7 @@ section .title::after {
 /* about section styling */
 #about-me {
     height: 100vh;
+    height: auto;
     padding: 0px;
     color: var(--seventh-color);
     /* background-color: var(--second-color); */
@@ -887,4 +888,8 @@ section .title::after {
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+#about-me-paragraph{
+    /* background-color: red; */
 }

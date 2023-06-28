@@ -615,9 +615,9 @@
                         <h2 class="title">About me</h2>
                         <div class="about-content">
                             <div class="column left">
-                                <img src="https://media.aykhan.net/assets/logos/main-logo-dark.png" alt="">
+                                <img id="about-me-image" src="https://media.aykhan.net/me/about-me-image.png" alt="Me">
                             </div>
-                            <div class="column right">
+                            <div class="column right" id="about-me-paragraph">
                                 <div class="text">I'm <span style="color: var(--first-color);">Aykhan</span> and I'm a
                                     <span style="color: var(--first-color);">Full Stack Developer</span>
                                 </div>
@@ -649,7 +649,7 @@
                                     the way. Through hands-on projects and personal initiatives, I have expanded my
                                     skill set and developed a strong foundation in both front-end and back-end
                                     development.
-                                    
+
                                     <!-- 
                                     <br />
                                     <br />
@@ -730,8 +730,9 @@
                     <div class="contact-content">
                         <div class="column left">
                             <div class="text">Get in Touch</div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga
-                                corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                            <p>Thank you for visiting my website. If you have any questions, comments, or would like to
+                                connect, I would love to hear from you. You can reach me through the contact form below
+                                or using the contact details provided.</p>
                             <div class="icons">
                                 <div class="row">
                                     <i class="fas fa-user"></i>
@@ -748,10 +749,12 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <i class="fas fa-envelope"></i>
-                                    <div class="info">
+                                    <i class="fas fa-envelope" style="margin-left: -4px; margin-right: -2px;"></i>
+                                    <div class="info" >
                                         <div class="head">Email</div>
-                                        <div class="sub-title">ayxanx17@gmail.com</div>
+                                        <div class="sub-title">
+                                            <a href="mailto:ayxanx17@gmail.com">ayxanx17@gmail.com</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -878,5 +881,6 @@
     ga('send', 'pageview');
 </script>
 <script src="home/js/application.js"></script>
+<script src="home/js/index.js"></script>
 
 </html>

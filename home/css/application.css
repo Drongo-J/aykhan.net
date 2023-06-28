@@ -1000,7 +1000,7 @@ button[disabled] {
 }
 
 .main-hero {
-    height: 100vh;
+    min-height: 100vh;
     background: var(--second-color);
     overflow: hidden;
     transition: all .3s ease
@@ -3961,7 +3961,6 @@ main {
 }
 
 .privacy {
-    min-height: 100vh;
     color: var(--third-color);
     background-color: var(--second-color);
     padding-top: 140px;
@@ -5563,8 +5562,16 @@ main {
     cursor: pointer !important;
     text-decoration: underline !important;
     font-family: 'Poppins', sans-serif !important;
+    white-space: 0px;
 }
 
-.institution-link:hover{
+.institution-link:hover {
     text-decoration: none !important;
+}
+
+@media only screen and (max-width:948px) {
+    .download-link {
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -18,10 +18,39 @@ function calculateAge() {
 }
 
 window.onload = function () {
+  // Set Age
   var ageElement = document.getElementById("age");
   var age = calculateAge();
   ageElement.innerText = age;
+
+  // Set About Me Image Height
+
 };
+
+window.addEventListener('DOMContentLoaded', function () {
+  var paragraph = document.getElementById("about-me-paragraph");
+  var image = document.getElementById("about-me-image");
+   
+  // Function to set the image height
+  function setImageHeight() {
+    // if (window.innerHeight < 948) {
+    //   return;
+    // }
+
+    var paragraphHeight = paragraph.offsetHeight;
+    console.log(paragraphHeight);
+    if (paragraphHeight == 602)
+    paragraphHeight = 652;
+    image.style.height = paragraphHeight + "px";
+  }
+
+  // Set the image height on page load
+  setImageHeight();
+
+  // Set the image height on window resize
+  window.addEventListener('resize', setImageHeight);
+  window.dispatchEvent(new Event('resize'));
+});
 
 // ========== 1 ==========
 
