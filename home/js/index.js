@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Set the image height on window resize
   window.addEventListener('resize', setImageHeight);
-  window.dispatchEvent(new Event('resize'));
+  // window.dispatchEvent(new Event('resize'));
 });
 
 // ========== 1 ==========
