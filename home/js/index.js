@@ -17,28 +17,38 @@ window.onload = function () {
   ageElement.innerText = age;
 };
 
-window.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   var paragraph = document.getElementById("about-me-paragraph");
   var image = document.getElementById("about-me-image");
 
-  // Function to set the image height
   function setImageHeight() {
     var paragraphHeight = paragraph.offsetHeight;
     console.log(paragraphHeight);
-    if (paragraphHeight == 602)
+
+    if (paragraphHeight === 602) {
       paragraphHeight = 652;
+    }
+
     image.style.height = paragraphHeight + "px";
     console.log(image.style.height);
   }
 
-  // Set the image height on page load
-  setImageHeight();
+  function debounce(func, delay) {
+    var timeoutId;
+    return function () {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(func, delay);
+    };
+  }
 
-  // Set the image height on window resize
-  window.addEventListener('resize', setImageHeight);
-  console.log("ADDED");
-  window.dispatchEvent(new Event('resize'));
+  function handleResize() {
+    debounce(setImageHeight, 100);
+  }
+
+  setImageHeight();
+  window.addEventListener('resize', handleResize);
 });
+
 
 // ========== 1 ==========
 
