@@ -15,9 +15,7 @@ window.onload = function () {
   var ageElement = document.getElementById("age");
   var age = calculateAge();
   ageElement.innerText = age;
-};
 
-document.addEventListener('DOMContentLoaded', function () {
   var paragraph = document.getElementById("about-me-paragraph");
   var image = document.getElementById("about-me-image");
 
@@ -46,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setImageHeight();
   window.addEventListener('resize', handleResize);
-});
+};
 
 
 // ========== 1 ==========
