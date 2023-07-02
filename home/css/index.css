@@ -891,5 +891,8 @@ section .title::after {
 }
 
 #about-me-paragraph{
-    /* background-color: red; */
+}
+
+#about-me-image{
+    max-height: 855px;
 }

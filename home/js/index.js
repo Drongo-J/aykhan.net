@@ -22,27 +22,26 @@ document.addEventListener('DOMContentLoaded', function () {
   var image = document.getElementById("about-me-image");
 
   function setImageHeight() {
-    var paragraphHeight = paragraph.offsetHeight;
-    console.log(paragraphHeight);
-
-    if (paragraphHeight === 602) {
-      paragraphHeight = 652;
+    if (window.innerWidth <= 948) {
+      image.style.height = "auto";
+      console.log("RETURN" + window.innerWidth);
+      return;
     }
+    else {
 
-    image.style.height = paragraphHeight + "px";
-    console.log(image.style.height);
-  }
+      var paragraphHeight = paragraph.offsetHeight;
 
-  function debounce(func, delay) {
-    var timeoutId;
-    return function () {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(func, delay);
-    };
+      if (paragraphHeight === 602) {
+        paragraphHeight = 655;
+      }
+
+      image.style.height = paragraphHeight + 5 + "px";
+      console.log("CHANGED" + image.style.height);
+    }
   }
 
   function handleResize() {
-    debounce(setImageHeight, 100);
+    setImageHeight();
   }
 
   setImageHeight();

@@ -5574,4 +5574,8 @@ main {
         width: 100%;
         text-align: center;
     }
+
+    #about-me-image{
+        height: auto;
+    }
 }
