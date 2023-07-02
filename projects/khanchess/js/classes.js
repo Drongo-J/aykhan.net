@@ -255,7 +255,7 @@ class Piece {
 
         // check check :)
         let myKingSquareIndex = board.Squares.findIndex(f => f.piece == Piece.King && f.color == board.ColorToMove);
-        console.log("KING INDEX " + myKingSquareIndex);
+        // console.log("KING INDEX " + myKingSquareIndex);
         let myKingSquare = document.getElementById(myKingSquareIndex);
         board.ColorToMove = Piece.reverseColor(board.ColorToMove);
         let testMoves = getNewMoves();
@@ -311,11 +311,11 @@ class Piece {
         // let move = `${startMove}-${endMove}`;
 
         let result = chess.move(endMove);
-        console.log(result);
-        console.log("Move Played : " + endMove);
+        // console.log(result);
+        // console.log("Move Played : " + endMove);
         board.fen = chess.fen();
-        console.log("FEN : " + board.fen);
-        console.log(chess.ascii());
+        // console.log("FEN : " + board.fen);
+        // console.log(chess.ascii());
 
         updatePlayedMoves();
         moves = getNewMoves();

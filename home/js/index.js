@@ -1,11 +1,5 @@
 window.scrollTo(0, 0);
 
-// Reload the page only once
-// if (!sessionStorage.getItem('pageReloaded')) {
-//     sessionStorage.setItem('pageReloaded', 'true');
-//     window.location.reload();
-//   }
-
 function calculateAge() {
   var birthday = new Date("2006-02-23"); // Replace with your birthdate in yyyy-mm-dd format
   var today = new Date();
@@ -18,30 +12,23 @@ function calculateAge() {
 }
 
 window.onload = function () {
-  // Set Age
   var ageElement = document.getElementById("age");
   var age = calculateAge();
   ageElement.innerText = age;
-
-  // Set About Me Image Height
-
 };
 
 window.addEventListener('DOMContentLoaded', function () {
   var paragraph = document.getElementById("about-me-paragraph");
   var image = document.getElementById("about-me-image");
-   
+
   // Function to set the image height
   function setImageHeight() {
-    // if (window.innerHeight < 948) {
-    //   return;
-    // }
-
     var paragraphHeight = paragraph.offsetHeight;
     console.log(paragraphHeight);
     if (paragraphHeight == 602)
-    paragraphHeight = 652;
+      paragraphHeight = 652;
     image.style.height = paragraphHeight + "px";
+    console.log(image.style.height);
   }
 
   // Set the image height on page load

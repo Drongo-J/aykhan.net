@@ -11,7 +11,7 @@ const descriptions = [
     'Take Notes in Calendar. Save Notes using Cookies',
     'Game Agar.io. Eat foods to get bigger',
     'Cinema Website Template using API',
-    'No Task',
+    'No Task Assigned',
     'Sign Up, Log In form using jQuery',
     'No Task',
     'Website Header builder using jQuery',

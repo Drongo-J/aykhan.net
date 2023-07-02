@@ -398,6 +398,8 @@ function showBoardInConsole() {
         // aside.innerHTML += "<br/>"
         // console.log(rowStr); 
     }
+
+    // console.log('\n\n'); 
 }
 
 function changeViewAfterMove(oldSquare, element, itemBeingDragged) { // element can be a piece or a square
@@ -545,7 +547,9 @@ async function chooseComputerMove() {
 }
 
 async function playComputer() {
-    let computerMove = await chooseComputerMove();
+    // let computerMove = await chooseComputerMove();
+    let moves = getNewMoves();
+    let computerMove = moves[Math.floor(Math.random() * moves.length)];
     if (!computerMove) {
         return;
     }
@@ -588,23 +592,27 @@ function checkMate(newGeneratedMoves) {
             if (board.WhiteKingIsChecked) {
                 console.log("MATE | BLACK WON");
                 setTimeout(() => {
+                    endAudio.play();
                     alert("MATE | BLACK WON");
-                }, 3000);
+                }, 100);
             } else {
                 setTimeout(() => {
+                    drawAudio.play();
                     alert("DRAW");
-                }, 3000);
+                }, 100);
             }
         } else {
             if (board.BlackKingIsChecked) {
                 console.log("MATE | WHITE WON");
                 setTimeout(() => {
+                    endAudio.play();
                     alert("MATE | WHITE WON");
-                }, 3000);
+                }, 100);
             } else {
                 setTimeout(() => {
+                    drawAudio.play();
                     alert("DRAW");
-                }, 3000);
+                }, 100);
             }
         }
     }
@@ -616,64 +624,64 @@ function checkDraw() {
 
 let movesPlayed = document.getElementById("moves-played");
 function updatePlayedMoves() {
-    if (board.MovesPlayed.length == 1) {
-        movesPlayed.innerHTML = stringEmpty;
-    }
-    let l = board.MovesPlayed.length;
-    if (l === 0) return;
-    let content;
+    // if (board.MovesPlayed.length == 1) {
+    //     movesPlayed.innerHTML = stringEmpty;
+    // }
+    // let l = board.MovesPlayed.length;
+    // if (l === 0) return;
+    // let content;
 
-    if (l % 2 === 0) {
-        no = l / 2;
-        let element = document.getElementById(`played-move-${no}`);
-        let blackMoveIndex = board.MovesPlayed[l - 1].targetSquare;
-        let c2 = coordinates[blackMoveIndex];
-        let whiteMoveIndex = board.MovesPlayed[l - 2].targetSquare;
-        let c1 = coordinates[whiteMoveIndex];
-        let w_piece = board.Squares[whiteMoveIndex];
-        let w_unicode;
-        if (w_piece.piece != Piece.Pawn) {
-            w_unicode = Piece.getUnicode(w_piece);
-        } else {
-            w_unicode = '';
-        }
-        let b_piece = board.Squares[blackMoveIndex];
-        let b_unicode;
-        if (b_piece.piece != Piece.Pawn) {
-            b_unicode = Piece.getUnicode(b_piece);
-        } else {
-            b_unicode = '';
-        }
-        element.innerHTML = `
-        <section id='played-move-${no}' class="played-move">
-            <section id="no">${no}</section>
-            <section id="white-move">${w_unicode}${c1}</section>
-            <section id="black-move">${b_unicode}${c2}</section>
-        </section>
-        `;
-    }
-    else {
-        let whiteMoveIndex = board.MovesPlayed[l - 1].targetSquare;
-        let c1 = coordinates[whiteMoveIndex];
-        let no = Math.floor(l / 2) + 1;
-        let piece = board.Squares[whiteMoveIndex];
-        let unicode;
-        if (piece.piece != Piece.Pawn) {
-            unicode = Piece.getUnicode(piece);
-        } else {
-            unicode = '';
-        }
-        content = `
-        <section id='played-move-${no}' class="played-move">
-            <section id="no">${no}</section>
-            <section id="white-move">${unicode}${c1}</section>
-            <section id="black-move"></section>
-        </section>
-        `;
-        movesPlayed.innerHTML += content;
-    }
+    // if (l % 2 === 0) {
+    //     no = l / 2;
+    //     let element = document.getElementById(`played-move-${no}`);
+    //     let blackMoveIndex = board.MovesPlayed[l - 1].targetSquare;
+    //     let c2 = coordinates[blackMoveIndex];
+    //     let whiteMoveIndex = board.MovesPlayed[l - 2].targetSquare;
+    //     let c1 = coordinates[whiteMoveIndex];
+    //     let w_piece = board.Squares[whiteMoveIndex];
+    //     let w_unicode;
+    //     if (w_piece.piece != Piece.Pawn) {
+    //         w_unicode = Piece.getUnicode(w_piece);
+    //     } else {
+    //         w_unicode = '';
+    //     }
+    //     let b_piece = board.Squares[blackMoveIndex];
+    //     let b_unicode;
+    //     if (b_piece.piece != Piece.Pawn) {
+    //         b_unicode = Piece.getUnicode(b_piece);
+    //     } else {
+    //         b_unicode = '';
+    //     }
+    //     element.innerHTML = `
+    //     <section id='played-move-${no}' class="played-move">
+    //         <section id="no">${no}</section>
+    //         <section id="white-move">${w_unicode}${c1}</section>
+    //         <section id="black-move">${b_unicode}${c2}</section>
+    //     </section>
+    //     `;
+    // }
+    // else {
+    //     let whiteMoveIndex = board.MovesPlayed[l - 1].targetSquare;
+    //     let c1 = coordinates[whiteMoveIndex];
+    //     let no = Math.floor(l / 2) + 1;
+    //     let piece = board.Squares[whiteMoveIndex];
+    //     let unicode;
+    //     if (piece.piece != Piece.Pawn) {
+    //         unicode = Piece.getUnicode(piece);
+    //     } else {
+    //         unicode = '';
+    //     }
+    //     content = `
+    //     <section id='played-move-${no}' class="played-move">
+    //         <section id="no">${no}</section>
+    //         <section id="white-move">${unicode}${c1}</section>
+    //         <section id="black-move"></section>
+    //     </section>
+    //     `;
+    //     movesPlayed.innerHTML += content;
+    // }
 
-    movesPlayed.scrollTo(0, movesPlayed.scrollHeight);
+    // movesPlayed.scrollTo(0, movesPlayed.scrollHeight);
 }
 
 const dropdownDefaulthtml = `
@@ -695,7 +703,6 @@ pieceSetsItem.addEventListener('click', function (event) {
     event.stopPropagation();
     showPieceSets();
 });
-
 
 function showPieceSets() {
     dropdown.innerHTML = stringEmpty;

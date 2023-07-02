@@ -6,8 +6,21 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.aykhan.net/thumbnails/step-it-academy/asp-net/task7.png');
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
 }
 
 /* Header Start */
@@ -50,6 +63,7 @@ header {
     margin-left: auto;
     color: white;
 }
+
 /* Header End */
 
 /* Main Start */
@@ -59,12 +73,22 @@ main{
     justify-content: center;
     align-items: center;
     height: 70%;
+    padding: 20px;
 }
 
 main > a{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 14px;
+    padding: 10px;
     color: blue; 
     font-size: 40px;
     text-align: center;
+    border-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1 1,
+    linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1 1,
+    linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1 1,
+    linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) 1 1;
 }
 
 /* Main End */
@@ -87,6 +111,7 @@ p {
     color: whitesmoke;
     text-decoration: none;
 }
+
 /* Footer End */
 
 @media screen and (max-width: 500px) {
