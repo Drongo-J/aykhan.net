@@ -29,7 +29,7 @@ let white_castleKS = false;
 let black_castleKS = false;
 
 let AI_vs_AI = false;
-let player_vs_AI = false;
+let player_vs_AI = true;
 
 let AI_playSpeed = 50;
 
