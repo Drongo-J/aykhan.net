@@ -5,4 +5,4 @@ const khanChess = new PageLinkItem(1, "KhanChess", "Chess game agains chess bot"
 
 const projects = [khanChess];
 
-addItemsToContainer(container, institutions);
+addItemsToContainer(container, projects);
