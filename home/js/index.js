@@ -1,7 +1,13 @@
 window.scrollTo(0, 0);
 
+var isJavid = false;
+
 function calculateAge() {
-  var birthday = new Date("2006-02-23"); // Replace with your birthdate in yyyy-mm-dd format
+
+  var birthday = new Date("2006-02-23");
+  if (isJavid) {
+    birthday = new Date("2008-04-27");
+  }
   var today = new Date();
   var age = today.getFullYear() - birthday.getFullYear();
   var monthDiff = today.getMonth() - birthday.getMonth();
