@@ -5569,10 +5569,15 @@ main {
     text-decoration: none !important;
 }
 
-@media only screen and (max-width:948px) {
+@media only screen and (max-width:1226px) {
     .download-link {
         width: 100%;
         text-align: center;
+    }
+
+    .about-content{
+        gap: 30px;
+        flex-direction: column; 
     }
 
     #about-me-image{

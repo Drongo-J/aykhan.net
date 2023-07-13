@@ -279,6 +279,9 @@ section .title::after {
 
 .about .about-content .left {
     width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about .about-content .left img {
@@ -803,7 +806,7 @@ section .title::after {
     }
 
     .about .about-content .column {
-        width: 100%;
+        width: 100.6%;
     }
 
     .about .about-content .left {
