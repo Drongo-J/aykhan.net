@@ -18,7 +18,6 @@ function sendMail(event) {
             // document.getElementById("message").value = "";
             console.log(res);
             alert("Your message sent successfully!!")
-
         })
         .catch(err => {
             alert(err);
