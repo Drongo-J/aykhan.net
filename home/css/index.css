@@ -894,5 +894,6 @@ section .title::after {
 }
 
 #about-me-image{
+    all: initial;
     max-height: 855px;
 }
