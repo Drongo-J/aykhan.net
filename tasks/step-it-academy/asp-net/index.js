@@ -35,6 +35,9 @@ const descriptions = [
     'ASP.NET - Exam Project - Zust',
 
     'ASP.NET - Exam Project - Zust',
+    'ASP.NET - Exam Project - Zust',
+    'ASP.NET - Exam Project - Zust',
+    'ASP.NET - Exam Project - Zust',
     'ASP.NET - Exam Project - Zust'
 ]
 
