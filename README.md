@@ -1,4 +1,4 @@
-# Aykhan.net - Personal Portfolio and Programming Tasks
+# aykhan.net - Personal Portfolio and Programming Tasks
 
 <div align="center">
   <img src="https://media.aykhan.net/assets/logos/aykhannet.ico" alt="Aykhan.net Logo">
