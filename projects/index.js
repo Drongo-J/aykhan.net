@@ -6,6 +6,6 @@ const khanChess = new PageLinkItem(1, "KhanChess", "Chess game agains chess bot"
 const zust = new PageLinkItem(2, "Zust", "Social Media Website",
     "https://media.aykhan.net/thumbnails/projects/zust.png", "https://aykhan.net/projects/zust");
 
-const projects = [khanChess];
+const projects = [khanChess, zust];
 
 addItemsToContainer(container, projects);
