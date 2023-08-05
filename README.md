@@ -43,8 +43,8 @@ As a passionate individual, I decided to pursue my dreams further and enrolled i
 In conclusion, I am a passionate 17-year-old Full Stack Developer focused on honing my programming skills and expanding my knowledge in computer engineering. With experience, eagerness to learn, and diverse interests, I strive to make a positive impact in the world of technology and beyond.
 
 Connect with me on:
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/aykhan-ahmadzada-02998724b/)
-- YouTube: [@YourTwitterHandle](https://www.youtube.com/@myprojects440)
+- LinkedIn: https://www.linkedin.com/in/aykhan-ahmadzada-02998724b/
+- YouTube: https://www.youtube.com/@myprojects440
 - Lichess: https://lichess.org/@/Ahmadzada-Aykhan
 
 Let's connect and collaborate!
