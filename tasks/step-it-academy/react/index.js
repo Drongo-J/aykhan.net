@@ -5,7 +5,8 @@ const lessonName = "react";
 const lessonNameNormalized = "React -";
 const descriptions = [
     'Custom React Website',
-    'Task using React Props'
+    'Task using React Props',
+    'Products Shop in React'
 ]
 
 const taskCount = descriptions.length;
