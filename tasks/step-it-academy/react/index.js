@@ -7,7 +7,6 @@ const descriptions = [
     'Custom React Website',
     'Task using React Props',
     'Products Shop in React',
-    'Add Product Update Product Form React',
     'React Product Editor'
 ]
 
