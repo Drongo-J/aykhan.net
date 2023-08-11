@@ -7,7 +7,8 @@ const descriptions = [
     'Custom React Website',
     'Task using React Props',
     'Products Shop in React',
-    'React Product Editor'
+    'React Product Editor',
+    'No Task'
 ]
 
 const taskCount = descriptions.length;
