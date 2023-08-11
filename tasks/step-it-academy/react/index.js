@@ -6,7 +6,9 @@ const lessonNameNormalized = "React -";
 const descriptions = [
     'Custom React Website',
     'Task using React Props',
-    'Products Shop in React'
+    'Products Shop in React',
+    'Add Product Update Product Form React',
+    'React Product Editor'
 ]
 
 const taskCount = descriptions.length;
