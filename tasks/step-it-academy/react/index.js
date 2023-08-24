@@ -9,7 +9,10 @@ const descriptions = [
     'Products Shop in React',
     'React Product Editor',
     'No Task',
-    'React Cars Task (RH Car Dealership)'
+    'React Cars Task (RH Car Dealership)',
+    'BestOil Gas Filling Station',
+    'No Task',
+    'No Task'
 ]
 
 const taskCount = descriptions.length;
