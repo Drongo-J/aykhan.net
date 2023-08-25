@@ -12,7 +12,8 @@ const descriptions = [
     'React Cars Task (RH Car Dealership)',
     'BestOil Gas Filling Station',
     'No Task',
-    'No Task'
+    'No Task',
+    'React Quizzes Task',
 ]
 
 const taskCount = descriptions.length;
