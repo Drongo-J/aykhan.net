@@ -16,6 +16,10 @@ const descriptions = [
     'React Quizzes Task',
     'React: useContext and Axios integration',
     'React Quizzes Task using Class Components',
+    'Exam Project - KhanLibrary',
+    'No Task',
+    'Exam Project - KhanLibrary',
+    'No Task'
 ]
 
 const taskCount = descriptions.length;

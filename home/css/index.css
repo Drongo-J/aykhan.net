@@ -897,12 +897,12 @@ section .title::after {
 }
 
 #about-me-image{
-    width: 500px;
     all: initial;
+    width: 500px;
     max-height: 855px;
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     #about-me-image{
         width: 100%;    
     }
