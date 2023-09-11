@@ -28,7 +28,6 @@ window.onload = function () {
   function setImageHeight() {
     if (window.innerWidth <= 948) {
       image.style.height = "auto";
-      console.log("RETURN" + window.innerWidth);
       return;
     }
     else {
@@ -40,7 +39,6 @@ window.onload = function () {
       }
 
       image.style.height = paragraphHeight + 5 + "px";
-      console.log("CHANGED" + image.style.height);
     }
   }
 
