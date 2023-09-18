@@ -5585,3 +5585,11 @@ main {
     }
 }
 
+@media only screen and (max-width:718px) {
+    #about-me-image{
+        height: auto;
+        max-width: 100% !important;
+        width: auto !important;
+    }
+}
+
