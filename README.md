@@ -38,9 +38,9 @@ Born in 2006, I started my educational path at XXI Century International Educati
 
 My coding journey began when I enrolled in Step IT Academy. in September 2021. Over the past years, I have dedicated myself to mastering different programming languages and frameworks, gaining invaluable experience along the way. Through hands-on projects and personal initiatives, I have expanded my skill set and developed a strong foundation in both front-end and back-end development.
 
-As a passionate individual, I decided to pursue my dreams further and enrolled in the Computer Engineering program at METU University. This academic endeavor allows me to delve deeper into the intricacies of computer systems and software development, paving the way for a promising future in the field.
+As a passionate individual, I decided to pursue my dreams further and enrolled in the Computer Engineering program at Koç University. This academic endeavor allows me to delve deeper into the intricacies of computer systems and software development, paving the way for a promising future in the field.
 
-In conclusion, I am a passionate 17-year-old Full Stack Developer focused on honing my programming skills and expanding my knowledge in computer engineering. With experience, eagerness to learn, and diverse interests, I strive to make a positive impact in the world of technology and beyond.
+In conclusion, I am a passionate Full Stack Developer focused on honing my programming skills and expanding my knowledge in computer engineering. With experience, eagerness to learn, and diverse interests, I strive to make a positive impact in the world of technology and beyond.
 
 Connect with me on:
 - LinkedIn: https://www.linkedin.com/in/aykhan-ahmadzada-02998724b/
