@@ -9,6 +9,9 @@ const zust = new PageLinkItem(2, "Zust", "Social Media Website",
 const khanLibrary = new PageLinkItem(3, "KhanLibrary", "Library App in React",
 "https://media.aykhan.net/thumbnails/projects/khanlibrary.png", "https://aykhan.net/projects/khanlibrary");
 
-const projects = [khanChess, zust, khanLibrary];
+const calculationPractise = new PageLinkItem(4, "Calculation Practise", "Website to Practise Calculation",
+"https://media.aykhan.net/thumbnails/projects/calculation-practise.png", "https://aykhan.net/projects/calculation-practise");
+
+const projects = [khanChess, zust, khanLibrary, calculationPractise];
 
 addItemsToContainer(container, projects);
